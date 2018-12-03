@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eu
+#set -eu
 
 ESCAPE_SEQ=$'\033'
 ARROW_UP=$'A'
