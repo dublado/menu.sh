@@ -22,7 +22,7 @@ menu.show() {
       MENU_INDEX=$counter
       printf "\033[%sm>\033[0m \033[%sm%s\033[0m\n" $MENU_COLOR_ARROW $MENU_COLOR_ACTIVE "${i}"
     else
-      printf "  \e[2m${i}\e[22m\n"
+      printf "  \e[%sm%s\e[0m\n" $MENU_COLOR_OPTIONS "${i}"
     fi
     counter=$((counter + 1))
   done
