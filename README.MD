@@ -13,9 +13,6 @@ The menu selected option will be available on `$MENU_SELECTED`.
 
 ```
 % cat example.sh
-#!/usr/bin/env bash
-set -eu
-
 source menu.sh
 menu v2 v1 v2 v3
 echo "You selected version $MENU_SELECTED."
