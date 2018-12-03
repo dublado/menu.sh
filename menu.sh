@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#set -eu
 
 ESCAPE_SEQ=$'\033'
 ARROW_UP=$'A'
@@ -48,11 +47,6 @@ menu() {
   MENU_INDEX=0
   MENU_ACTIVE=${1:-}
   MENU_OPTIONS=(${@:2})
-
-  echo $1
-  echo $2
-  echo $@
-  exit
 
   menu.show
   while true
