@@ -12,9 +12,13 @@ being the whole list of options.
 The menu selected option will be available on `$MENU_SELECTED`.
 
 ```
+% cat example.sh
+#!/usr/bin/env bash
+set -eu
+
 source menu.sh
 menu v2 v1 v2 v3
-echo $MENU_SELECTED
+echo "You selected version $MENU_SELECTED."
 ```
 
 Pressing `Ctrl+C` or `q` when the menu is shown will result in an unset
