@@ -3,6 +3,13 @@
 A shell script to present and select menu options.
 
 
+## Installation
+
+```
+curl -L -o menu.sh https://git.io/fpHJ3
+```
+
+
 ## Usage
 
 After sourcing the `menu.sh` file just call `menu` with the first
