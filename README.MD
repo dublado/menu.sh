@@ -1,6 +1,6 @@
 # menu.sh
 
-A shell menu to display and select options.
+A shell script to present and select menu options.
 
 
 ## Usage

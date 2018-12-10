@@ -16,7 +16,7 @@ menu.show() {
   local counter=0
   for i in "${MENU_OPTIONS[@]}"
   do
-    if [ "$i" = "$MENU_ACTIVE" ]
+    if [ "$i" = "$MENU_SELECTED" ]
     then
       MENU_INDEX=$counter
       printf "\033[%sm>\033[0m \033[%sm%s\033[0m\n" $MENU_COLOR_ARROW $MENU_COLOR_ACTIVE "${i}"
@@ -39,13 +39,13 @@ menu.choose() {
   fi
 
   echo -e "\033[$((count + 1))A"
-  MENU_ACTIVE="${MENU_OPTIONS[index]}"
+  MENU_SELECTED="${MENU_OPTIONS[index]}"
   menu.show
 }
 
 menu() {
   MENU_INDEX=0
-  MENU_ACTIVE=${1:-}
+  MENU_SELECTED=${1:-}
   MENU_OPTIONS=(${@:2})
 
   menu.show
@@ -66,7 +66,7 @@ menu() {
         ;;
    
       "q")    unset MENU_SELECTED;  return ;;
-      "")     export MENU_SELECTED="$MENU_ACTIVE"; return ;;
+      "")     export MENU_SELECTED; return ;;
     esac
   done
 }
