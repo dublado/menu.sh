@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-ESCAPE_SEQ=$'\033'
-ARROW_UP=$'A'
-ARROW_DOWN=$'B'
-
 MENU_INDEX=0
 MENU_ACTIVE=""
 MENU_OPTIONS=()
@@ -47,6 +43,10 @@ menu() {
   MENU_INDEX=0
   MENU_SELECTED=${1:-}
   MENU_OPTIONS=(${@:2})
+
+  ESCAPE_SEQ=$'\033'
+  ARROW_UP=$'A'
+  ARROW_DOWN=$'B'
 
   menu.show
   while true
