@@ -42,6 +42,7 @@ menu.choose() {
 menu() {
   MENU_INDEX=0
   MENU_SELECTED=${1:-}
+  MENU_COUNT=$(( $# - 1))
   MENU_OPTIONS=(${@:2})
 
   ESCAPE_SEQ=$'\033'
@@ -59,8 +60,10 @@ menu() {
         then
           read -rsn 1 -t 1 key3
           case "$key3" in
-            $ARROW_UP)    menu.choose $((MENU_INDEX - 1)) ;;
-            $ARROW_DOWN)  menu.choose $((MENU_INDEX + 1)) ;;
+            $ARROW_UP)
+              [[ $MENU_INDEX -eq 0 ]] && menu.choose $MENU_COUNT || menu.choose $((MENU_INDEX - 1));;
+            $ARROW_DOWN)
+              [[ $MENU_INDEX -eq $(( $MENU_COUNT - 1 )) ]] && menu.choose 0 || menu.choose $((MENU_INDEX + 1));;
           esac
         fi
         ;;
