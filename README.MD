@@ -33,8 +33,8 @@ Pressing `Ctrl+C` or `q` when the menu is shown will result in an unset
 
 ### Options
 
-| Environment variable  | Usage                                                     | Default                   |
-|-----------------------|-----------------------------------------------------------|-------------------------- |
-| MENU_COLOR_OPTIONS    | The not-highlighted colour of the options                 | bash color 2 (greyed out) |
-| MENU_COLOR_ACTIVE     | The colour of the highlighted option                      | bash color 0 (default)    |
-| MENU_COLOR_ARROW      | The colour of the arrow next to the highlighted option    | bash color 36 (green)     |
+| Environment variable    | Usage                                                     | Default                   |
+|-------------------------|-----------------------------------------------------------|-------------------------- |
+| `MENU_COLOR_OPTIONS`    | The not-highlighted colour of the options                 | bash color 2 (greyed out) |
+| `MENU_COLOR_ACTIVE`     | The colour of the highlighted option                      | bash color 0 (default)    |
+| `MENU_COLOR_ARROW`      | The colour of the arrow next to the highlighted option    | bash color 36 (green)     |
