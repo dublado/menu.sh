@@ -6,7 +6,7 @@ A shell script to present and select menu options.
 ## Installation
 
 ```
-curl -LO https://git.io/menu.sh
+curl -Lo menu.sh https://git.io/fpHJ3
 ```
 
 
