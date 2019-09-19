@@ -6,7 +6,7 @@ A shell library to select menu options.
 ## Installation
 
 ```
-curl -Lo menu.sh https://git.io/fpHJ3
+curl -LOs https://raw.githubusercontent.com/jpedro/menu.sh/master/menu.sh
 ```
 
 
