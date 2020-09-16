@@ -6,11 +6,6 @@ A shell library to select menu options.
 ## Installation
 
 ```
-curl -LOs https://git.io/menu.sh
-```
-
-If that link doesn't work, try:
-```
 curl -LOs https://raw.githubusercontent.com/jpedro/menu.sh/master/menu.sh
 ```
 
