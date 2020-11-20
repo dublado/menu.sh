@@ -2,7 +2,7 @@
 # set -eu
 
 MENU_LOG=/tmp/menu.sh.log
-MENU_INDEX=0
+MENU_INDEX=-1
 MENU_COUNT=0
 MENU_ACTIVE=""
 MENU_OPTIONS=()
